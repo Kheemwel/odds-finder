@@ -1,36 +1,60 @@
-## Usage
+# Odds Finder
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+A probability calculator designed to determine the required number of attempts to reach specific confidence thresholds based on a given win rate.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## Tech Stack
+
+- **Framework:** SolidJS
+- **Build Tool:** Vite
+- **Styling:** TailwindCSS + DaisyUI
+- **Language:** TypeScript
+- **Testing:** Vitest
+- **Features:** Vite PWA Plugin
+
+## Features
+
+- **Real-time Calculations:** Instant results as inputs change.
+- **Confidence Thresholds:** Displays attempts needed for 30%, 50%, 90%, and 99% probability.
+- **Interactive UI:** Range slider and numeric input for precise win rate selection (1-99%).
+- **PWA Support:** Installable as a web app with offline capabilities.
+- **Responsive Design:** Optimized for both desktop and mobile environments.
+
+## How to Use
+
+### Installation
 
 ```bash
-$ npm install # or pnpm install or yarn install
+npm install
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+### Development
 
-## Available Scripts
+Start the development server:
 
-In the project directory, you can run:
+```bash
+npm run dev
+```
 
-### `npm run dev` or `npm start`
+### Build
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Create a production-ready bundle:
 
-The page will reload if you make edits.<br>
+```bash
+npm run build
+```
 
-### `npm run build`
+### Preview
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+Serve the production build locally:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```bash
+npm run serve
+```
 
-## Deployment
+### Testing
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+Run the test suite:
 
-## This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli)
+```bash
+npm test
+```
