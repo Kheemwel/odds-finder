@@ -4,6 +4,10 @@ import { render } from 'solid-js/web';
 import 'solid-devtools';
 
 import App from './App';
+import { registerSW } from 'virtual:pwa-register';
+
+// Register the service worker for offline support
+registerSW({ immediate: true });
 
 const root = document.getElementById('root');
 
