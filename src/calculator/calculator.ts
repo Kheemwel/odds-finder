@@ -1,6 +1,6 @@
-type CalcError = { success: false; message: string };
-type CalcSuccess = { success: true; attempts: number };
-type CalcResult = CalcSuccess | CalcError;
+export type CalcError = { success: false; message: string };
+export type CalcSuccess = { success: true; attempts: number };
+export type CalcResult = CalcSuccess | CalcError;
 
 /**
  * @param winRate - The individual chance per attempt (e.g., 1 for 1%)
